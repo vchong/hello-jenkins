@@ -5,6 +5,6 @@ ssh victor@linbuntu <<EOF
   git pull
   npm install #--production
   #forever restartall
-  node app.js
+  node app.js &
   exit
 EOF
