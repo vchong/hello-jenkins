@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ssh victor@linbuntu <<EOF
+  cd ~/work/nobckup/bb/jenkins/hello-jenkins
+  git pull
+  npm install #--production
+  #forever restartall
+  node app.js
+  exit
+EOF
