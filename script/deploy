@@ -8,8 +8,12 @@ ssh victor@linbuntu <<EOF
   echo nmp install forever commented out
   #npm install forever #victor needs su 2 run but not jenkins! Y?
   #forever restartall
+
+  #this runs in bckgnd aft xit called!!! so we sleep 3s bf callg xit
   echo node app.js &
   node app.js &
+
+  sleep 3
   echo exit
   exit
 EOF
