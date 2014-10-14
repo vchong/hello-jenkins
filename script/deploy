@@ -12,7 +12,7 @@ ssh victor@linbuntu <<EOF
   #this runs in bckgnd aft xit called!!! so we sleep 3s bf callg xit
   echo node app.js in bckgnd
   #node app.js &
-  nohup node app.js
+  nohup node app.js &
 
   sleep 3
   rm nohup.out
