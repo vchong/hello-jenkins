@@ -10,7 +10,7 @@ ssh victor@linbuntu <<EOF
   #forever restartall
 
   #this runs in bckgnd aft xit called!!! so we sleep 3s bf callg xit
-  echo node app.js &
+  echo node app.js in bckgnd
   node app.js &
 
   sleep 3
