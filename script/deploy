@@ -3,9 +3,13 @@
 ssh victor@linbuntu <<EOF
   cd ~/work/nobckup/bb/jenkins/hello-jenkins
   git pull
+  echo npm install
   npm install #--production
+  echo nmp install forever commented out
   #npm install forever #victor needs su 2 run but not jenkins! Y?
   #forever restartall
+  echo node app.js &
   node app.js &
+  echo exit
   exit
 EOF
