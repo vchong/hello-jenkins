@@ -14,7 +14,8 @@ ssh victor@linbuntu <<EOF
   #node app.js &
   nohup node app.js
 
-  #sleep 3
+  sleep 3
+  rm nohup.out
   echo exit
   exit
 EOF
