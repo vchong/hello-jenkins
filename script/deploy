@@ -7,15 +7,18 @@ ssh victor@linbuntu <<EOF
   npm install #--production
   echo nmp install forever commented out
   #npm install forever #victor needs su 2 run but not jenkins! Y?
-  #forever restartall
 
+  echo forever restartall
+  node_modules/forever/bin/forever restartall
+
+  #ALL USELESS!!! WONT XIT TILL node app.js PROCESS KILLED!!!
   #this runs in bckgnd aft xit called!!! so we sleep 3s bf callg xit
-  echo node app.js in bckgnd
+  #echo node app.js in bckgnd
   #node app.js &
-  nohup node app.js &
+  #nohup node app.js &
 
-  sleep 3
-  rm nohup.out
+  #sleep 3
+  #rm nohup.out
   echo exit
   exit
 EOF
