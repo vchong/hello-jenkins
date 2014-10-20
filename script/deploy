@@ -9,6 +9,7 @@ ssh victor@linbuntu <<EOF
   #npm install forever #victor needs su 2 run but not jenkins! Y?
 
   echo forever restartall
+  echo bla 1
   #node_modules/forever/bin/forever restartall
 
   #ALL USELESS!!! WONT XIT TILL node app.js PROCESS KILLED!!!
