@@ -10,6 +10,7 @@ ssh victor@linbuntu <<EOF
 
   echo forever restartall
   echo bla 1
+  echo bla 3 
   #node_modules/forever/bin/forever restartall
 
   #ALL USELESS!!! WONT XIT TILL node app.js PROCESS KILLED!!!
